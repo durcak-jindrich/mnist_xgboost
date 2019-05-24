@@ -1,18 +1,19 @@
 name: mnist_xgboost
 channels:
   - cvxgrp
-  - conda-forge
   - anaconda
+  - conda-forge
   - r
   - defaults
 dependencies:
+  - _py-xgboost-mutex=2.0=cpu_0
   - appnope=0.1.0=py36hf537a9a_0
   - backcall=0.1.0=py36_0
   - blas=1.0=mkl
   - bleach=3.0.2=py36_0
   - bzip2=1.0.6=1
-  - ca-certificates=2018.11.29=ha4d7672_0
-  - certifi=2018.11.29=py36_1000
+  - ca-certificates=2019.3.9=hecc5488_0
+  - certifi=2019.3.9=py36_0
   - cvxcanon=0.1.1=py36_0
   - cycler=0.10.0=py_1
   - decorator=4.3.0=py36_0
@@ -39,6 +40,8 @@ dependencies:
   - libgfortran=3.0.1=h93005f0_2
   - libpng=1.6.36=ha441bb4_1000
   - libsodium=1.0.16=h3efe00b_0
+  - libxgboost=0.81=h0a44026_1000
+  - llvm-openmp=4.0.1=hcfea43d_1
   - markupsafe=1.1.0=py36h1de35cc_0
   - matplotlib=3.0.2=py36_1001
   - matplotlib-base=3.0.2=py36hf043ca5_1001
@@ -55,7 +58,7 @@ dependencies:
   - notebook=5.7.4=py36_0
   - numpy=1.15.4=py36hacdab7b_0
   - numpy-base=1.15.4=py36h6575580_0
-  - openssl=1.0.2p=h470a237_2
+  - openssl=1.0.2r=h1de35cc_0
   - pandas=0.23.4=py36h6440ff4_0
   - pandoc=2.2.3.2=0
   - pandocfilters=1.4.2=py36_1
@@ -67,6 +70,7 @@ dependencies:
   - prometheus_client=0.5.0=py36_0
   - prompt_toolkit=2.0.7=py36_0
   - ptyprocess=0.6.0=py36_0
+  - py-xgboost=0.81=py36h0a44026_1000
   - pygments=2.3.1=py36_0
   - pyparsing=2.3.1=py_0
   - python=3.6.6=h5001a0f_0
@@ -91,6 +95,7 @@ dependencies:
   - wcwidth=0.1.7=py36h8c6ec74_0
   - webencodings=0.5.1=py36_1
   - wheel=0.32.3=py36_0
+  - xgboost=0.81=py36h0a44026_1000
   - xz=5.2.4=h1de35cc_4
   - zeromq=4.2.5=h0a44026_1
   - zlib=1.2.11=h1de35cc_3
